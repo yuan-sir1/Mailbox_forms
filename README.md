@@ -2,7 +2,7 @@
 直接打包下载的没有PHPMailer   请去右侧的releases下载，releases里面的包含PHPMailer
 
 # Mailbox_forms
-一个简约的的邮箱表单，基于PHPMailer开发
+一个简约的的邮箱表单，基于PHPMailer 6.9.1开发
 Demo：https://mobile-web.hiyuansir.com/mail/
 # 截图
 ![image](https://github.com/yuan-sir1/Mailbox_forms/assets/85924672/c6974efc-5388-43b9-b7d1-20d2ccb4531a)
