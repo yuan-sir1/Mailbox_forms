@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #FF5733;
+}
+
+.crossmark {
+    font-size: 80px;
+    color: #FF5733;
+}

@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.checkmark {
+    font-size: 80px;
+    color: #4CAF50;
+}

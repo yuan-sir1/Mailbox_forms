@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web/css/index.css">
+    <title>邮箱表单 - 袁先生</title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="logo.png">
+    <!--IE检测-->
+    <script>if (/@cc_on!@/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href = "http://ie-out.cloud-services.yuan-sir.com/upgrade-your-browser.html?referrer=" + encodeURIComponent(window.location.href); </script>
+    <!-- 禁止右键 -->
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>邮箱表单</h2>
+        <form id="emailForm" action="Letter/send_email.php" method="post">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required placeholder="怎么称呼您">
+            <label for="email">邮箱:</label>
+            <input type="email" id="email" name="email" required placeholder="请输入邮箱地址">
+            <label for="subject">主题:</label>
+            <input type="text" id="subject" name="subject" required placeholder="请输入邮件主题">
+            <label for="message">内容:</label>
+            <textarea id="message" name="message" required placeholder="请输入邮件内容"></textarea>
+            <input type="submit" value="发送">
+        </form>
+    </div>
+    <script src="web/js/emailFormValidation.js"></script>
+    <script src="web/js/validate.js"></script>
+</body>
+
+</html>
