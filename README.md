@@ -1,5 +1,5 @@
 # 不要直接打包下载！不要直接打包下载！
-直接打包下载的没有PHPMailer   请去右侧的releases下载，releases里面的包含PHPMailer
+直接打包下载的没有PHPMailer   请去右侧的releases下载最新版本，releases里面的包含PHPMailer
 
 # Mailbox_forms
 一个简约的的邮箱表单，基于PHPMailer 6.9.1开发
