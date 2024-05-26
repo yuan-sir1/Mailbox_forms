@@ -9,9 +9,12 @@
     <!-- logo -->
     <link rel="shortcut icon" href="logo.png">
     <!--IE检测-->
-    <script>if (/@cc_on!@/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href = "http://ie-out.cloud-services.yuan-sir.com/upgrade-your-browser.html?referrer=" + encodeURIComponent(window.location.href); </script>
+    <script>
+        if (/@cc_on!@/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href = "http://ie-out.cloud-services.yuan-sir.com/upgrade-your-browser.html?referrer=" + encodeURIComponent(window.location.href);
+    </script>
     <!-- 禁止右键 -->
-    <script>document.addEventListener("DOMContentLoaded", function () {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             document.addEventListener("contextmenu", function (e) {
                 e.preventDefault();
             });
@@ -20,9 +23,26 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="loading-text">提交中</div>
+    </div>
     <div class="container">
         <h2>邮箱表单</h2>
-        <form id="emailForm" action="Letter/send_email.php" method="post">
+        <form id="emailForm" action="Letter/send_email.php" method="post" onsubmit="showLoading()">
             <label for="name">姓名:</label>
             <input type="text" id="name" name="name" required placeholder="怎么称呼您">
             <label for="email">邮箱:</label>
@@ -30,12 +50,23 @@
             <label for="subject">主题:</label>
             <input type="text" id="subject" name="subject" required placeholder="请输入邮件主题">
             <label for="message">内容:</label>
-            <textarea id="message" name="message" required placeholder="请输入邮件内容"></textarea>
-            <input type="submit" value="发送">
+            <textarea id="message" name="message" required placeholder="请输入邮件内容禁止输入<>" minlength="5"
+                maxlength="500"></textarea>
+            <input type="submit" value="提交">
         </form>
+        <footer>
+            By © 2019 -
+            <script type="text/javascript">document.write((new Date()).getFullYear());</script>
+            <a href="https://www.hiyuansir.com"> 袁先生 </a> 版权所有
+        </footer>
     </div>
     <script src="web/js/emailFormValidation.js"></script>
     <script src="web/js/validate.js"></script>
+    <script>
+        function showLoading() {
+            document.getElementById("loading").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>

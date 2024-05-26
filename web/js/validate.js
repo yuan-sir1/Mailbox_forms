@@ -1,18 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const nameInput = document.getElementById("name");
     const subjectInput = document.getElementById("subject");
     const messageInput = document.getElementById("message");
 
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function (event) {
         // 验证文本输入框
         const textInputs = [nameInput, subjectInput, messageInput];
-        const regex = /^[a-zA-Z0-9\s\u4e00-\u9fa5.,!?;:()'"\-]*$/; // 允许的字符：字母、数字、空格、中文字符和常见标点符号
+        const regex = /^[^<>]*$/; // 允许的字符：禁止 < 和 >
 
         for (const input of textInputs) {
             if (!regex.test(input.value)) {
                 alert("请勿输入特殊字符！");
                 event.preventDefault();
+                location.reload(); // 刷新页面
                 return;
             }
         }
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!emailPattern.test(emailInput.value)) {
             alert("请输入有效的邮箱地址！");
             event.preventDefault();
+            location.reload(); // 刷新页面
         }
     });
 });
