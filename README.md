@@ -1,20 +1,13 @@
 # 不要直接打包下载！不要直接打包下载！
 直接打包下载的没有PHPMailer   请去右侧的releases下载最新版本，releases里面的包含PHPMailer
-
-# Mailbox_forms
-一个简约的的邮箱表单，基于PHPMailer 6.9.1开发
-Demo：https://mobile-web.hiyuansir.com/mail/
-
-SMTP配置信息在 /Letter/config.php中修改
-
-
-# 截图
-![image](https://github.com/yuan-sir1/Mailbox_forms/assets/85924672/c6974efc-5388-43b9-b7d1-20d2ccb4531a)
-![image](https://github.com/yuan-sir1/Mailbox_forms/assets/85924672/a0839eef-1c48-405c-8942-be285fb2c1a7)
-
 ### 邮箱表单简介
 
-我们的邮箱表单系统是一个简洁高效的工具，旨在为用户提供一种便捷的方式来提交他们的邮箱地址。该系统可以用于订阅新闻通讯、注册活动、获取用户反馈等多种场景。以下是系统的主要功能和特点：
+我们的邮箱表单系统是一个简洁高效的工具，旨在为用户提供一种便捷的方式来提交他们的邮箱地址。该系统可以用于订阅新闻通讯、注册活动、获取用户反馈等多种场景。
+
+Demo：https://mobile-web.hiyuansir.com/mail/
+
+![image](https://github.com/yuan-sir1/Mailbox_forms/assets/85924672/c6974efc-5388-43b9-b7d1-20d2ccb4531a)
+![image](https://github.com/yuan-sir1/Mailbox_forms/assets/85924672/a0839eef-1c48-405c-8942-be285fb2c1a7)
 
 #### 功能特点：
 
