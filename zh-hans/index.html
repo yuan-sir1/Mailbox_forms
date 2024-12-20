@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/web/css/index.css">
+    <title>邮箱表单 - 袁先生</title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="https://dogecloud.cdn.hiyuansir.com/public/web_logo.png">
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="loading-text">提交中</div>
+    </div>
+    <div class="container">
+        <h2>联系我</h2>
+        <form id="emailForm" action="../public/Letter/send_email.php" method="post" onsubmit="showLoading()">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required  minlength="2" maxlength="5" placeholder="怎么称呼您">
+            <label for="email">邮箱:</label>
+            <input type="email" id="email" name="email" required placeholder="请输入邮箱地址">
+            <label for="subject">主题:</label>
+            <input type="text" id="subject" name="subject" required  minlength="2" maxlength="15" placeholder="请输入邮件主题">
+            <label for="message">内容:</label>
+            <textarea id="message" name="message" required placeholder="请输入邮件内容" minlength="5"
+                maxlength="500"></textarea>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+    <script src="../public/web/js/emailFormValidation.js"></script>
+    <script>
+        function showLoading() {
+            document.getElementById("loading").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

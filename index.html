@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please wait ...</title>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            // 获取浏览器语言
+            var userLang = navigator.language || navigator.userLanguage;
+
+            // 处理语言代码，转换为小写
+            userLang = userLang.toLowerCase();
+
+            // 根据语言跳转到相应目录
+            if (userLang.startsWith('en')) {
+                window.location.href = "en-us";
+            } else if (userLang.startsWith('es')) {
+                window.location.href = "en-us";
+            } else {
+                // 默认跳转到中文目录
+                window.location.href = "zh-hans";
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Please wait ...</h1>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #FF5733;
+}
+
+.checkmark, .crossmark {
+    font-size: 80px;
+}
+
+.checkmark {
+    color: #4CAF50;
+}
+
+.crossmark {
+    color: #FF5733;
+}
+
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.original-error-message {
+    color: grey;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1e90ff;
+    /* 设置为和发送按钮一样的颜色 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #FF814A;
+    /* 设置悬停颜色为稍微浅一点的色调 */
+}
